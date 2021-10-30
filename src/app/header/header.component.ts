@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  keyword='';
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  titlesearch($event){
+    console.log($event);
+  }
 }

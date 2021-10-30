@@ -3,14 +3,18 @@
   <div class="home-page">
     <div class="banner">
       <div class="container">
-        <h1 class="logo-font">conduit</h1>
-        <p>A place to share your knowledge.</p>
+        <h1 class="logo-font" [title]="title">{{title}}</h1>
+        <p [innerHTML]="subtitle">{{subtitle}}</p>
       </div>
     </div>
     <div class="container page">
       <div class="row">
-        <app-article></app-article>
-        <app-tags></app-tags>
+        <div class="col-md-9">
+          <app-article></app-article>
+        </div>
+        <div class="col-md-3">
+          <app-tags></app-tags>
+        </div>
       </div>
     </div>
   </div>
