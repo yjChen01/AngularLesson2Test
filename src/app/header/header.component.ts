@@ -22,6 +22,6 @@ export class HeaderComponent implements OnInit {
     console.log($event);
     this.TitleHighlight=!this.TitleHighlight;
     ++this.fontSize;
-    this.articlesService.searchArticles(this.keyword);
+    this.articlesService.filterArticles(this.keyword);
   }
 }

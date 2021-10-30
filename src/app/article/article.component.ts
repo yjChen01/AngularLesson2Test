@@ -1,3 +1,4 @@
+import { Article } from './../article';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -11,6 +12,6 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  @Input() list:any[]=[];
+  @Input() list:Article[]=[];
 
 }
