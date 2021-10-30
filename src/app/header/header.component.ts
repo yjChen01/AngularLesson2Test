@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+
   keyword='';
+  TitleHighlight=false;
+  fontSize=24;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -14,5 +18,7 @@ export class HeaderComponent implements OnInit {
 
   titlesearch($event){
     console.log($event);
+    this.TitleHighlight=!this.TitleHighlight;
+    ++this.fontSize;
   }
 }
